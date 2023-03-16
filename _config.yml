@@ -1,0 +1,39 @@
+title: CAB301 Resources
+description: A supplement website to QUT CAB301 Algorithms and Complexity
+theme: just-the-docs
+color_scheme: dark
+
+url: https://just-the-docs.github.io
+
+# aux_links:
+#   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 3
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  important:
+    title: Important
+    color: purple
+  note:
+    title: Note
+    color: blue
+  highlight:
+    title: Highlight
+    color: yellow
