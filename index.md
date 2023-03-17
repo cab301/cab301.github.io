@@ -28,4 +28,4 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 > Download the Source Code
 > 
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-02/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-02/archive/23se1-wed-13.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-02/archive/23se1-fri-13.zip){: .btn .btn-purple .mr-2 }
