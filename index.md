@@ -28,7 +28,7 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 > Download the Source Code
 > 
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-02/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-02/archive/23se1-fri-13.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-02/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
 
 ### Topic 3: Linear Data Structures and Search Algorithms
 
@@ -37,7 +37,7 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 >
 > [Monday Class (2-4pm)](https://github.com/cab301/prac-03/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-03/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-03/archive/23se1-fri-13.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-03/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
 
 ### Topic 4: Basic Sorting Algorithms
 
@@ -46,4 +46,4 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 >
 > [Monday Class (2-4pm)](https://github.com/cab301/prac-04/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-04/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-04/archive/23se1-fri-13.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-04/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
