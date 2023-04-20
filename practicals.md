@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Weekly Practicals
 nav_order: 15
@@ -8,4 +8,4 @@ permalink: /practicals
 
 # Practical
 
-This section contains the practical activities for each week.
+This section contains the practical activities for each week. -->
