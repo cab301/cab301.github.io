@@ -73,3 +73,17 @@ No class on Friday due to public holiday.
 > [Monday Class (2-4pm)](https://github.com/cab301/prac-06/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-06/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
 > [Friday Class (1-3pm)](https://github.com/cab301/prac-06/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
+
+### Topic 7: Tree and Tree Algorithms
+
+{: .important-title }
+> Cat Pedigree Exercise Template Code. The exercise description can be found here: [https://github.com/cab301/cat-pedigree](https://github.com/cab301/cat-pedigree)
+>
+> [Cat Pedigree Exercise](https://github.com/cab301/cat-pedigree/archive/main.zip){: .btn .btn-purple .mr-2 }
+
+{: .important-title }
+> Download the Source Code
+>
+> [Monday Class (2-4pm)](https://github.com/cab301/prac-07/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
+> [Thursday Class (5-7pm)](https://github.com/cab301/prac-07/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-07/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
