@@ -79,7 +79,8 @@ No class on Friday due to public holiday.
 {: .important-title }
 > Cat Pedigree Exercise Template Code. The exercise description can be found here: [https://github.com/cab301/cat-pedigree](https://github.com/cab301/cat-pedigree)
 >
-> [Cat Pedigree Exercise](https://github.com/cab301/cat-pedigree/archive/main.zip){: .btn .btn-purple .mr-2 }
+> [Instructions](https://github.com/cab301/cat-pedigree){: .btn .btn-red .mr-2 }
+> [Code Template](https://github.com/cab301/cat-pedigree/archive/main.zip){: .btn .btn-purple .mr-2 }
 
 {: .important-title }
 > Download the Source Code
