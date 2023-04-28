@@ -3,7 +3,7 @@ layout: default
 title: Writing Test Cases for Methods
 nav_order: 1
 has_children: true
-permalink: /pracs
+permalink: /test-guide
 ---
 
 # Writing Test Cases for Methods
