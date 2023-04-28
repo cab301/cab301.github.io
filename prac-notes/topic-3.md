@@ -24,15 +24,19 @@ permalink: /test-guide
 
 A method is a block of code that performs a specific task, forming a unit of a program. This unit of code can be tested to ensure that it works as expected. This is done by providing a set of inputs to the method, and checking that the output is as expected.
 
-Such a process is called **unit testing**, and the inputs and outputs are called **test cases**.
+Such a process is called **unit testing**, and the inputs and outputs form a **test case**.
 
 ## What is a Test Case?
 
-A test case is a set of inputs and expected outputs for a method. A test case is used to test a method to ensure that it works as expected. A test case is made up of the following components:
+A test case is a set of inputs and expected outputs for a method. A test case is used to test a method to ensure that it works as expected. A test case is usually made up of the following components:
 
 - **Description**: A description of what is being tested. This should include the name of the method being tested, and a general description of the inputs and outputs.
-- **Inputs**: The specific inputs that are being provided to the method, as well as any preconditions that must be met before the method is called.
+- **Preconditions**: The conditions that must be met before the tested method is called. This includes any setup (for example, creating a collection and adding some elements to it if needed).
+- **Test Data**: The data that is being used to test the method.
+- **Postconditions**: The conditions that must be met after the tested method is called (for example, if an element is added to a collection, the collection should contain the element after the method is called).
 - **Outputs**: The expected outputs of the method, as well as any postconditions that must be met after the method is called.
+
+*Note that the preconditions and postconditions are not inputs and outputs of the method, but are conditions that must be met before and after the method is called. Not all test cases will have preconditions and postconditions*.
 
 ## Some Guidelines for Writing Test Cases
 
