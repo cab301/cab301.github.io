@@ -56,8 +56,12 @@ These methods are used to validate some input, and usually return a `bool` value
 - **Invalid input**: The input is outside the valid range, but is not at the boundary of the valid range.
 - **Boundary invalid input**: The input is outside the valid range, and is at the boundary of the valid range.
 
-<details>
-<summary><mark>Why should we test for the boundaries? (Click to expand)</mark></summary>
+<details closed markdown="block">
+<summary>
+  <mark>
+    Why should we test for the boundaries? (Click to expand)
+  </mark>
+</summary>
 
 **Boundary valid input tests**
 
