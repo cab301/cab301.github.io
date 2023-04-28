@@ -120,10 +120,10 @@ We can write the following test cases for this method:
 
 | Test Case | Inputs | Expected Output | Notes |
 | --------- | ------ | --------------- | ----- |
-| IsValidAge given age is 14 | `age = 14` | `false` | Normal invalid input |
-| IsValidAge given age is 17 | `age = 17` | `false` | Boundary invalid input |
+| IsValidAge given age is less than 17 | `age = 14` | `false` | Normal invalid input |
+| IsValidAge given age is 17 (one less than 18) | `age = 17` | `false` | Boundary invalid input |
 | IsValidAge given age is 18 | `age = 18` | `true` | Boundary valid input |
-| IsValidAge given age is 25 | `age = 19` | `true` | Normal valid input |
+| IsValidAge given age is between 19 and 34 | `age = 19` | `true` | Normal valid input |
 | IsValidAge given age is 35 | `age = 35` | `true` | Boundary valid input |
-| IsValidAge given age is 36 | `age = 36` | `false` | Boundary invalid input |
-| IsValidAge given age is 40 | `age = 40` | `false` | Normal invalid input |
+| IsValidAge given age is 36 (one more than 35) | `age = 36` | `false` | Boundary invalid input |
+| IsValidAge given age is more than 46 | `age = 40` | `false` | Normal invalid input |
