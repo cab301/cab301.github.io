@@ -88,3 +88,14 @@ No class on Friday due to public holiday.
 > [Monday Class (2-4pm)](https://github.com/cab301/prac-07/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
 > [Thursday Class (5-7pm)](https://github.com/cab301/prac-07/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
 > [Friday Class (1-3pm)](https://github.com/cab301/prac-07/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
+
+### Topic 8: Graph Algorithms I
+
+### Topic 9: Graph Algorithms II
+
+{: .important-title }
+> Download the Source Code
+>
+> [Monday Class (2-4pm)](https://github.com/cab301/prac-09/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
+> [Thursday Class (5-7pm)](https://github.com/cab301/prac-09/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
+> [Friday Class (1-3pm)](https://github.com/cab301/prac-09/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
