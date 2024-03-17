@@ -11,7 +11,7 @@ permalink: /
 
 This website contains supplementary resources for the CAB301 - Algorithms and Complexity unit at the Queensland University of Technology. These resources are prepared by [me](https://github.com/autumnssuns) for quick reference and revision purposes.
 
-[CAB301 on Canvas](https://canvas.qut.edu.au/courses/1910/modules){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[CAB301 on Canvas](https://canvas.qut.edu.au/courses/16669/modules){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
@@ -20,100 +20,32 @@ The resources found here are not intended to be a replacement for the lectures a
 
 To get started, click on the links in the sidebar to navigate to the relevant notes.
 
+## Quick Links: Tutorial Slides
+
+[Tutorial 1: Introduction to Algorithms and Complexity](https://cab301.github.io/slides/Tutorial_1)
+
+[Tutorial 2: Analysis of Algorithms](https://cab301.github.io/slides/Tutorial_2)
+
+[Tutorial 3: Linear Data Structures and Search Algorithms](https://cab301.github.io/slides/Tutorial_3)
+
 ## Quick Links: Download the Workshop Source Code
-
-### Other: Test Driver
-
-{: .important-title }
-> Download the Source Code For Test Driver
->
-> [Test Driver](https://github.com/cab301/test-driver/archive/main.zip){: .btn .btn-purple .mr-2 }
 
 ### Topic 2: Analysis of Algorithms
 
 {: .important-title }
 > Download the Source Code
-> 
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-02/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-02/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
+>
+> [Monday Class (9:00 - 11:00)](https://github.com/cab301/prac-02/archive/24se1-mon-0900.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (11:00 - 1:00 PM)](https://github.com/cab301/prac-02/archive/24se1-mon-1100.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (1:00 - 3:00 PM)](https://github.com/cab301/prac-02/archive/24se1-mon-1300.zip){: .btn .btn-purple .mr-2 }
+> [Wednesday Class (6:00 - 8:00 PM)](https://github.com/cab301/prac-02/archive/24se1-wed-1800.zip){: .btn .btn-purple .mr-2 }
 
 ### Topic 3: Linear Data Structures and Search Algorithms
 
 {: .important-title }
 > Download the Source Code
 >
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-03/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-03/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-03/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 4: Basic Sorting Algorithms
-
-{: .important-title }
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-04/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-04/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-04/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 5: Binary Tree, Binary Search Tree and Algorithms
-
-No class on Friday due to public holiday.
-
-{: .important-title }
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-05/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-05/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 6: Advanced Sorting Algorithms
-
-{: .important-title }
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-06/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-06/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-06/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 7: Tree and Tree Algorithms
-
-{: .important-title }
-> Cat Pedigree Exercise Template Code. The exercise description can be found here: [https://github.com/cab301/cat-pedigree](https://github.com/cab301/cat-pedigree)
->
-> [Instructions](https://github.com/cab301/cat-pedigree){: .btn .btn-red .mr-2 }
-> [Code Template](https://github.com/cab301/cat-pedigree/archive/main.zip){: .btn .btn-purple .mr-2 }
-
-{: .important-title }
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-07/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-07/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-07/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 8: Graph Algorithms I
-
-### Topic 9: Graph Algorithms II
-
-{: .important-title }
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-09/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-09/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-> [Friday Class (1-3pm)](https://github.com/cab301/prac-09/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 }
-
-### Topic 11: Hash Tables
-
-{: .important-title }
-> Download the Source Code
->
-<!-- > [Monday Class (2-4pm)](https://github.com/cab301/prac-09/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 } -->
-> [Thursday Class (5-7pm)](https://github.com/cab301/prac-11/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 }
-<!-- > [Friday Class (1-3pm)](https://github.com/cab301/prac-09/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 } -->
-
-
-### Topic 12: String Matching Algorithms
-
-> Download the Source Code
->
-> [Monday Class (2-4pm)](https://github.com/cab301/prac-12/archive/23se1-mon-2.zip){: .btn .btn-purple .mr-2 }
-<!-- > [Thursday Class (5-7pm)](https://github.com/cab301/prac-11/archive/23se1-thu-5.zip){: .btn .btn-purple .mr-2 } -->
-<!-- > [Friday Class (1-3pm)](https://github.com/cab301/prac-09/archive/23se1-fri-1.zip){: .btn .btn-purple .mr-2 } -->
+> [Monday Class (9:00 - 11:00)](https://github.com/cab301/prac-03/archive/24se1-mon-0900.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (11:00 - 1:00 PM)](https://github.com/cab301/prac-03/archive/24se1-mon-1100.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (1:00 - 3:00 PM)](https://github.com/cab301/prac-03/archive/24se1-mon-1300.zip){: .btn .btn-purple .mr-2 }
+> [Wednesday Class (6:00 - 8:00 PM)](https://github.com/cab301/prac-03/archive/24se1-wed-1800.zip){: .btn .btn-purple .mr-2 }
