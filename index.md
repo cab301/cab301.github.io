@@ -30,6 +30,16 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 
 ## Quick Links: Download the Workshop Source Code
 
+### Topic 1: Introduction to Algorithms and Complexity
+
+{: .important-title }
+> Download the Source Code
+>
+> [Monday Class (9:00 - 11:00)](https://github.com/cab301/prac-01/archive/24se1-mon-0900.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (11:00 - 1:00 PM)](https://github.com/cab301/prac-01/archive/24se1-mon-1100.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (1:00 - 3:00 PM)](https://github.com/cab301/prac-01/archive/24se1-mon-1300.zip){: .btn .btn-purple .mr-2 }
+> [Wednesday Class (6:00 - 8:00 PM)](https://github.com/cab301/prac-01/archive/24se1-wed-1800.zip){: .btn .btn-purple .mr-2 }
+
 ### Topic 2: Analysis of Algorithms
 
 {: .important-title }
@@ -49,3 +59,18 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 > [Monday Class (11:00 - 1:00 PM)](https://github.com/cab301/prac-03/archive/24se1-mon-1100.zip){: .btn .btn-purple .mr-2 }
 > [Monday Class (1:00 - 3:00 PM)](https://github.com/cab301/prac-03/archive/24se1-mon-1300.zip){: .btn .btn-purple .mr-2 }
 > [Wednesday Class (6:00 - 8:00 PM)](https://github.com/cab301/prac-03/archive/24se1-wed-1800.zip){: .btn .btn-purple .mr-2 }
+
+
+### Topic 4: Basic Sorting Algorithms
+
+[Worked Solution](./workshop-4){: .btn .btn-purple .mr-2 }
+
+[Solution Source Code](https://github.com/cab301/prac-04/archive/solution.zip){: .btn .btn-purple .mr-2 }
+
+{: .important-title }
+> Download the Source Code
+>
+> [Monday Class (9:00 - 11:00)](https://github.com/cab301/prac-04/archive/24se1-mon-0900.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (11:00 - 1:00 PM)](https://github.com/cab301/prac-04/archive/24se1-mon-1100.zip){: .btn .btn-purple .mr-2 }
+> [Monday Class (1:00 - 3:00 PM)](https://github.com/cab301/prac-04/archive/24se1-mon-1300.zip){: .btn .btn-purple .mr-2 }
+> [Wednesday Class (6:00 - 8:00 PM)](https://github.com/cab301/prac-04/archive/24se1-wed-1800.zip){: .btn .btn-purple .mr-2 }
