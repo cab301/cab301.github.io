@@ -63,9 +63,11 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 
 ### Topic 4: Basic Sorting Algorithms
 
-[Worked Solution](./workshop-4){: .btn .btn-purple .mr-2 }
-
-[Solution Source Code](https://github.com/cab301/prac-04/archive/solution.zip){: .btn .btn-purple .mr-2 }
+{: .important-title }
+> Check out the Worked Solution
+> 
+> [Worked Solution](./workshop-4){: .btn .btn-purple .mr-2 }
+> [Solution Source Code](https://github.com/cab301/prac-04/archive/solution.zip){: .btn .btn-purple .mr-2 }
 
 {: .important-title }
 > Download the Source Code
