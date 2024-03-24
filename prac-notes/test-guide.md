@@ -2,7 +2,7 @@
 layout: default
 title: Writing Test Cases for Methods
 nav_order: 1
-has_children: true
+has_children: false
 permalink: /test-guide
 ---
 
