@@ -28,6 +28,8 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 
 [Tutorial 3: Linear Data Structures and Search Algorithms](https://cab301.github.io/slides/Tutorial_3)
 
+[Tutorial 5: Binary Search Trees](https://cab301.github.io/slides/Tutorial_5)
+
 ## Quick Links: Download the Workshop Source Code
 
 ### Topic 1: Introduction to Algorithms and Complexity
