@@ -27,7 +27,7 @@ There are three common orders in which the nodes in a binary tree can be travers
 For each of the following binary trees, show the resulting order in which the nodes in
 the binary tree are visited using:
 
-![Binary_Tree_Traversal](Binary_Tree_Traversal.png)
+![Binary_Tree_Traversal](./Binary_Tree_Traversal.png)
 
 a. Pre-order traversal
 
@@ -71,7 +71,7 @@ Which of the following are binary search trees?
 
 a.
 
-![Candidate_BST_1](Candidate_BST_1.png)
+![Candidate_BST_1](./Candidate_BST_1.png)
 
 > **Answer**: Not a Binary Search Tree
 >
@@ -79,7 +79,7 @@ a.
 
 b.
 
-![Candidate_BST_2](Candidate_BST_2.png)
+![Candidate_BST_2](./Candidate_BST_2.png)
 
 > **Answer**: Not a Binary Search Tree
 >
@@ -87,7 +87,7 @@ b.
 
 c.
 
-![Candidate_BST_3](Candidate_BST_3.png)
+![Candidate_BST_3](./Candidate_BST_3.png)
 
 > **Answer**: Binary Search Tree
 >
@@ -128,13 +128,13 @@ iii. 55
 > **Answer**
 >
 > i. 79. Not exist, so no change. Red nodes are the nodes visited.
-> ![Delete_79](Delete_79.png)
+> ![Delete_79](./Delete_79.png)
 >
 > ii. 53. Has a single child, so it is replaced by its child.
-> ![Delete_53](Delete_53.png)
+> ![Delete_53](./Delete_53.png)
 >
 > iii. 55. Has two children, so it is replaced by the largest node in its left subtree (54).
-> ![Delete_55](Delete_55.png)
+> ![Delete_55](./Delete_55.png)
 
 c) Add the following nodes and show the new binary search tree:
 
@@ -146,10 +146,10 @@ ii. 81
 > **Answer**
 >
 > i. 35. Searching for 35 ends at 30, so 35 is added as the right child of 30.
-> ![Add_35](Add_35.png)
+> ![Add_35](./Add_35.png)
 >
 > ii. 81. Searching for 81 ends at 82, so 81 is added as the left child of 82.
-> ![Add_81](Add_81.png)
+> ![Add_81](./Add_81.png)
 
 ## Part B: Programming Tasks
 
