@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Workshop 5 - Basic Sorting Algorithms
+title: Workshop 5 - Binary Search Tree
 nav_order: 3
 has_children: false
 permalink: /workshop-5

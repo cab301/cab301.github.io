@@ -24,6 +24,11 @@ search:
   # Default: 10
   preview_words_after: 10
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
 callouts:
   warning:
     title: Warning
