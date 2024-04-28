@@ -32,6 +32,8 @@ To get started, click on the links in the sidebar to navigate to the relevant no
 
 [Tutorial 6: Trees and Algorithms](https://cab301.github.io/slides/Tutorial_6)
 
+[Tutorial 7: Advanced Sorting Algorithms](https://cab301.github.io/slides/Tutorial_7)
+
 ## Quick Links: Download the Workshop Source Code
 
 ### Topic 1: Introduction to Algorithms and Complexity
