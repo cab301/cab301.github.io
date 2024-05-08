@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Workshop 6 - Advanced Sorting Algorithms
+title: Workshop 7 - Advanced Sorting Algorithms
 nav_order: 5
 has_children: false
 permalink: /workshop-7
