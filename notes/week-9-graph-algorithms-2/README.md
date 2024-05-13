@@ -216,15 +216,6 @@ path between the vertices)
 > 
 >         static void Main(string[] args)
 >         {
->             /* Let us create the following weighted graph
->                    10
->               (0)------->(3)
->                |         /|\
->              5 |          |
->                |          | 1
->               \|/         |
->               (1)------->(2)
->                    3           */
 >             int[,] graph = { {INF,   8,  INF, 9, 4},
 >                         {INF, INF,   1, INF, INF},
 >                         {INF, 2, INF,   3, INF},
