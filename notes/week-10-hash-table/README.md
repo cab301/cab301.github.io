@@ -4,6 +4,7 @@ title: Workshop 10 - Hash Tables
 nav_order: 8
 has_children: false
 permalink: /workshop-10
+math: mathjax3
 ---
 
 # Workshop 10: Hash Tables
@@ -21,6 +22,49 @@ K = [ 2341, 4234, 2839, 352, 22, 397, 3920 ]
 Hash table size = 7
 Hash function $h(k) = k \pmod 7$
 
+{: .note-title }
+> **Answer**
+>
+> For each key, calculate $h(k)$ and place the key in the corresponding index of the hash table.
+>
+> $$
+> \begin{align*}
+> h(2341) = 2341 \pmod 7 &= 3 \\
+> h(4234) = 4234 \pmod 7 &= 6 \\
+> h(2839) = 2839 \pmod 7 &= 4 \\
+> h(352) = 352 \pmod 7 &= 2 \\
+> h(22) = 22 \pmod 7 &= 1 \\
+> h(397) = 397 \pmod 7 &= 5 \\
+> h(3920) = 3920 \pmod 7 &= 0 \\
+> \end{align*}
+> $$
+>
+> Rearrange by index:
+>
+> $$
+> \begin{align*}
+> h(3920) = 3920 \pmod 7 &= 0 \\
+> h(22) = 22 \pmod 7 &= 1 \\
+> h(352) = 352 \pmod 7 &= 2 \\
+> h(2341) = 2341 \pmod 7 &= 3 \\
+> h(2839) = 2839 \pmod 7 &= 4 \\
+> h(397) = 397 \pmod 7 &= 5 \\
+> h(4234) = 4234 \pmod 7 &= 6 \\
+> \end{align*}
+> $$
+>
+> And the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 0     | 3920 |
+> | 1     | 22 |
+> | 2     | 352 |
+> | 3     | 2341 |
+> | 4     | 2839 |
+> | 5     | 397 |
+> | 6     | 4234 |
+
 ## Question 2. Middle Square Method
 
 Using the Middle Square method the key is squared – use the middle 3 bits as the index into the hash table for the following values. Assume the hash table has an index ranging from 0 to 999.
@@ -28,6 +72,8 @@ Using the Middle Square method the key is squared – use the middle 3 bits as t
 ```plaintext
 K = [ 1221, 2134, 2254, 2452, 2941, 1000, 1874 ]
 ```
+
+
 
 ## Question 3. Folding Method
 
@@ -49,26 +95,28 @@ d. Apply the selecting digits method by extracting the 6th, 4th, and 1st value f
 
 A hash table uses linear probing to resolve collisions. The size of the hash table is 7 and the hash function is. Initially, the hash table is empty.
 
-```
 a. Simulate the behaviour of the hash table when the following actions are
 performed:
-```
-```
+
 i. Insert 374, 1091, 911, 227, 421, 161, 83;
+
 ii. Lookup 1091, 83, 1092;
+
 iii. Delete 911;
+
 iv. Lookup 83.
-```
-```
+
 b. Find
+
 i. The load factor;
+
 ii. The average number of probes to find a value that is in the table;
+
 iii. The average number of probes to find that a value is not in the table.
-```
-```
+
 c. Repeat part (a) for a hash table that uses separate chaining to resolve
 collisions.
-```
+
 ## Question 5. Hash table structures
 
 Assume you have a hash table which will store integers with 11 buckets.The hash function to be used to decide on the index will be:
