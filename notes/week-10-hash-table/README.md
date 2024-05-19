@@ -73,6 +73,49 @@ Using the Middle Square method the key is squared – use the middle 3 bits as t
 K = [ 1221, 2134, 2254, 2452, 2941, 1000, 1874 ]
 ```
 
+{: .note-title }
+> **Answer**
+>
+> For each key, calculate the middle square and extract the middle 3 bits to determine the index.
+>
+> $$
+> \begin{align*}
+> 1221^2 &= 14\bold{908}41 \\
+> 2134^2 &= 45\bold{539}56 \\
+> 2254^2 &= 50\bold{805}16 \\
+> 2452^2 &= 60\bold{123}04 \\
+> 2941^2 &= 86\bold{494}81 \\
+> 1000^2 &= 10\bold{000}00 \\
+> 1874^2 &= 35\bold{118}76 \\
+> \end{align*}
+> $$
+> 
+> Extract the middle 3 bits:
+>
+> $$
+> \begin{align*}
+> h(1221) &= 908 \\
+> h(2134) &= 539 \\
+> h(2254) &= 805 \\
+> h(2452) &= 123 \\
+> h(2941) &= 494 \\
+> h(1000) &= 000 \\
+> h(1874) &= 118 \\
+> \end{align*}
+> $$
+>
+> And the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 908   | 1221 |
+> | 539   | 2134 |
+> | 805   | 2254 |
+> | 123   | 2452 |
+> | 494   | 2941 |
+> | 0   | 1000 |
+> | 118   | 1874 |
+
 
 
 ## Question 3. Folding Method
