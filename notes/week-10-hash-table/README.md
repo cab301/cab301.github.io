@@ -116,8 +116,6 @@ K = [ 1221, 2134, 2254, 2452, 2941, 1000, 1874 ]
 > | 0   | 1000 |
 > | 118   | 1874 |
 
-
-
 ## Question 3. Folding Method
 
 Apply the folding method of hashing to the following keys. Assume we have a hash table ranging from index 0 to 999.
@@ -128,9 +126,72 @@ K = [ 189554134678,98214587412,567154662,1546591,65378456,982154 ]
 
 a. Based on the size of the hash table, how many digits should be grouped to determine the index at which the key belongs?
 
+{: .note-title }
+> **Answer**
+>
+> Since the index ranges from 000 to 999 (3 digits), we should group the keys into 3 digits.
+
 b. Calculate the address of the keys using shift folding.
 
+{: .note-title }
+> **Answer**
+>
+> For each key, group the digits into 3 and sum them up.
+>
+> $$
+> \begin{align*}
+> 189~554~134~678 &\rightarrow 189 + 554 + 134 + 678 &= 1\bold{555} \\
+> 982~145~874~12 &\rightarrow 982 + 145 + 874 + 12 &= 2\bold{013} \\
+> 567~154~662 &\rightarrow 567 + 154 + 662 &= 1\bold{383} \\
+> 154~659~1 &\rightarrow 154 + 659 + 1 &= ~~\bold{814} \\
+> 653~784~56 &\rightarrow 653 + 784 + 56 &= 1\bold{493} \\
+> 982~154 &\rightarrow 982 + 154 &= 1\bold{136} \\
+> \end{align*}
+> $$
+>
+> If the sum is greater than 999, we ignore the first digit.
+>
+> So the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 555   | 189554134678 |
+> | 13    | 98214587412 |
+> | 383   | 567154662 |
+> | 814   | 1546591 |
+> | 493   | 65378456 |
+> | 136   | 982154 |
+
 c. Apply folding at the boundaries to the above keys to calculate the address of the keys.
+
+{: .note-title }
+> **Answer**
+>
+> Similar to the above, split the keys into groups of 3. However, we reverse every other group (starting from the second group from the right) before summing them up.
+>
+> $$
+> \begin{align*}
+> 189~554~134~678 &\rightarrow 189 + 455 + 134 + 876 &= 1\bold{654} \\
+> 982~145~874~12 &\rightarrow 982 + 541 + 874 + 21 &= 2\bold{418} \\
+> 567~154~662 &\rightarrow 567 + 451 + 662 &= 1\bold{680} \\
+> 154~659~1 &\rightarrow 154 + 956 + 1 &= 1\bold{111} \\
+> 653~784~56 &\rightarrow 653 + 487 + 56 &= 1\bold{196} \\
+> 982~154 &\rightarrow 982 + 451 &= 1\bold{433} \\
+> \end{align*}
+> $$
+>
+> And the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 654   | 189554134678 |
+> | 418   | 98214587412 |
+> | 680   | 567154662 |
+> | 111   | 1546591 |
+> | 196   | 65378456 |
+> | 433   | 982154 |
+
+
 
 d. Apply the selecting digits method by extracting the 6th, 4th, and 1st value from the keys to calculate the relative address.
 
