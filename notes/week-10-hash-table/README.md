@@ -436,8 +436,132 @@ performed:**
 
 **iii. The average number of probes to find that a value is not in the table.**
 
+{: .note-title }
+> **Answer**
+>
+> When a value is not in the table, the number of probes is the same as the number of keys in the table (since we are basically doing a linear search).
+>
+> Therefore, the average number of probes to find that a value is not in the table is 7.
+
 **c. Repeat part (a) for a hash table that uses separate chaining to resolve
 collisions.**
+
+{: .note-title }
+> **Answer**
+>
+> Separate chaining uses linked lists to store multiple keys that hash to the same index. When a collision occurs, the key is added to the linked list at the corresponding index.
+>
+> **i. Insert 374, 1091, 911, 227, 421, 161, 83;**
+>
+> For each key, calculate $h(k)$ and add the key to the linked list at the corresponding index.
+>
+> $$
+> \begin{align*}
+> h(374) &= 374 \pmod 7 &= 3 \\
+> h(1091) &= 1091 \pmod 7 &= 6 \\
+> h(911) &= 911 \pmod 7 &= 1 \\
+> h(227) &= 227 \pmod 7 &= 3 \\
+> h(421) &= 421 \pmod 7 &= 1 \\
+> h(161) &= 161 \pmod 7 &= 0 \\
+> h(83) &= 83 \pmod 7 &= 6 \\
+> \end{align*}
+> $$
+>
+> The hash table is:
+>
+> | Index | Key(s) |
+> |-------|-----|
+> | 0     | 161 |
+> | 1     | 421, 911 |
+> | 2     |     |
+> | 3     | 227, 374 |
+> | 4     |     |
+> | 5     |     |
+> | 6     | 83, 1091 |
+>
+> **ii. Lookup 1091, 83, 1092;**
+>
+> To lookup a key, calculate $h(k)$ and search the linked list at the corresponding index.
+>
+> $$
+> \begin{align*}
+> h(1091) &= 1091 \pmod 7 &= 6 \\
+> h(83) &= 83 \pmod 7 &= 6 \\
+> h(1092) &= 1092 \pmod 7 &= 0 \\
+> \end{align*}
+> $$
+>
+> - 1091: Found at index 6 at 2 probes (chain: 83, **1091**).
+> - 83: Found at index 6 at 1 probe (chain: **83**, 1091).
+> - 1092: Chain at index 0 is empty, so not found. This takes` 1 probe.
+>
+> **iii. Delete 911;**
+>
+> To delete a key, calculate $h(k)$ and search the linked list at the corresponding index, then remove the key from the linked list.
+>
+> $$
+> \begin{align*}
+> h(911) &= 911 \pmod 7 &= 1 \\
+> \end{align*}
+> $$
+>
+> The hash table is now:
+>
+> | Index | Key(s) |
+> |-------|-----|
+> | 0     | 161 |
+> | 1     | 421 |
+> | 2     |     |
+> | 3     | 227, 374 |
+> | 4     |     |
+> | 5     |     |
+> | 6     | 83, 1091 |
+>
+> **iv. Lookup 83.**
+>
+> - 83: Found at index 6 at 1 probe (chain: **83**, 1091).
+>
+> **b. Find**
+>
+> **i. The load factor;**
+>
+> Still the same as before, the load factor is $\frac{6}{7} \approx 0.857$.
+>
+> **ii. The average number of probes to find a value that is in the table;**
+>
+> Use a similar approach (summing the number of probes for each key and dividing by the number of keys).
+>
+> | Key | Hash | Index in chain | Number of Probes |
+> |-----|------|----------|------------------|
+> | 161 | 0    | 0        | 1                |
+> | 421 | 1    | 0        | 1                |
+> | 374 | 3    | 1        | 2                |
+> | 227 | 3    | 0        | 1                |
+> | 83  | 6    | 0        | 1                |
+> | 1091| 6    | 1        | 2                |
+>
+> The total number of probes is 1 + 1 + 2 + 1 + 1 + 2 = 8. The average number of probes is $\frac{8}{6} \approx 1.33$.
+>
+> **iii. The average number of probes to find that a value is not in the table.**
+>
+> If a value is not in the table, we still need to:
+>
+> 1. Calculate $h(k)$.
+> 2. Search the linked list at the corresponding index.
+>
+> So the average number of probes is the total number of linked list nodes, divided by the number of keys:
+>
+> | Hash | Chain Size |
+> |------|------------|
+> | 0    | 1          |
+> | 1    | 1          |
+> | 2    | 0          |
+> | 3    | 2          |
+> | 4    | 0          |
+> | 5    | 0          |
+> | 6    | 2          |
+>
+> Total number of probes is 1 + 1 + 0 + 2 + 0 + 0 + 2 = 6. The average number of probes is $\frac{6}{7} \approx 0.857$.
 
 ## Question 5. Hash table structures
 
@@ -451,11 +575,145 @@ Draw up the structure of the hash table after inserting the following values:
 
 38, 31, 29, 50, 42, 12, 17, 23, 16, 55
 
-a. Open addressing using linear probing
+a. **Open addressing** using **linear probing**
 
-b. Open addressing using quadratic probing
+{: .note-title }
+> **Answer**
+>
+> For each key, calculate $h(k)$ and place the key in the corresponding index of the hash table.
+>
+> $$
+> \begin{align*}
+> h(38) &= 38 \pmod{11} &= 5 \\
+> h(31) &= 31 \pmod{11} &= 9 \\
+> h(29) &= 29 \pmod{11} &= 7 \\
+> h(50) &= 50 \pmod{11} &= 6 \\
+> h(42) &= 42 \pmod{11} &= 9 \\
+> h(12) &= 12 \pmod{11} &= 1 \\
+> h(17) &= 17 \pmod{11} &= 6 \\
+> h(23) &= 23 \pmod{11} &= 1 \\
+> h(16) &= 16 \pmod{11} &= 5 \\
+> h(55) &= 55 \pmod{11} &= 0 \\
+> \end{align*}
+> $$
+>
+> Probing linearly:
+>
+> - 38 goes to 5.
+> - 31 goes to 9.
+> - 29 goes to 7.
+> - 50 goes to 6.
+> - 42 goes to 9 (occupied), then 10.
+> - 12 goes to 1.
+> - 17 goes to 6 (occupied), then 7 (occupied), then 8.
+> - 23 goes to 1 (occupied), then 2.
+> - 16 goes to 5 (occupied), then 6 (occupied), then 7 (occupied), then 8 (occupied), then 9 (occupied), then 10 (occupied), then 0.
+> - 55 goes to 0 (occupied), then 1 (occupied), then 2 (occupied), then 3
+>
+> And the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 0     | 55 |
+> | 1     | 12 |
+> | 2     | 23 |
+> | 3     | 55 |
+> | 4     |     |
+> | 5     | 38 |
+> | 6     | 50 |
+> | 7     | 29 |
+> | 8     | 17 |
+> | 9     | 31 |
+> | 10    | 42 |
 
-c. Separate chaining
+b. **Open addressing** using **quadratic probing**
+
+{: .note-title }
+> **Answer**
+>
+> Similar to linear probing, but the probing sequence is quadratic.
+>
+> $$
+> \begin{align*}
+> h(38) &= 38 \pmod{11} &= 5 \\
+> h(31) &= 31 \pmod{11} &= 9 \\
+> h(29) &= 29 \pmod{11} &= 7 \\
+> h(50) &= 50 \pmod{11} &= 6 \\
+> h(42) &= 42 \pmod{11} &= 9 \\
+> h(12) &= 12 \pmod{11} &= 1 \\
+> h(17) &= 17 \pmod{11} &= 6 \\
+> h(23) &= 23 \pmod{11} &= 1 \\
+> h(16) &= 16 \pmod{11} &= 5 \\
+> h(55) &= 55 \pmod{11} &= 0 \\
+> \end{align*}
+> $$
+>
+> Probing quadratically (+1, +4, +9, +16, ...):
+>
+> - 38 goes to 5.
+> - 31 goes to 9.
+> - 29 goes to 7.
+> - 50 goes to 6.
+> - 42 goes to 9 (occupied), then 10.
+> - 12 goes to 1.
+> - 17 goes to 6 (occupied), then (6 + 1) % 11 = 7 (occupied), then (6 + 4) % 11 = 10 (occupied), then (6 + 9) % 11 = 4.
+> - 23 goes to 1 (occupied), then 2.
+> - 16 goes to 5 (occupied), then (5 + 1) % 11 = 6 (occupied), then (5 + 4) % 11 = 9 (occupied), then (5 + 9) % 11 = 3.
+> - 55 goes to 0.
+>
+> And the resulting hash table is:
+>
+> | Index | Key |
+> |-------|-----|
+> | 0     | 55 |
+> | 1     | 12 |
+> | 2     | 23 |
+> | 3     | 16 |
+> | 4     | 17 |
+> | 5     | 38 |
+> | 6     | 50 |
+> | 7     | 29 |
+> | 8     |     |
+> | 9     | 31 |
+> | 10    | 42 |
+
+c. **Separate chaining**
+
+{: .note-title }
+> **Answer**
+>
+> This is rather straightforward. For each key, calculate $h(k)$ and add the key to the linked list at the corresponding index.
+>
+> $$
+> \begin{align*}
+> h(38) &= 38 \pmod{11} &= 5 \\
+> h(31) &= 31 \pmod{11} &= 9 \\
+> h(29) &= 29 \pmod{11} &= 7 \\
+> h(50) &= 50 \pmod{11} &= 6 \\
+> h(42) &= 42 \pmod{11} &= 9 \\
+> h(12) &= 12 \pmod{11} &= 1 \\
+> h(17) &= 17 \pmod{11} &= 6 \\
+> h(23) &= 23 \pmod{11} &= 1 \\
+> h(16) &= 16 \pmod{11} &= 5 \\
+> h(55) &= 55 \pmod{11} &= 0 \\
+> \end{align*}
+> $$
+>
+> And the resulting hash table is:
+>
+> | Index | Key(s) |
+> |-------|-----|
+> | 0     | 55 |
+> | 1     | 12, 23 |
+> | 2     |     |
+> | 3     |     |
+> | 4     |     |
+> | 5     | 38, 16 |
+> | 6     | 50, 17 |
+> | 7     | 29 |
+> | 8     |     |
+> | 9     | 31, 42 |
+> | 10    |     |
 
 # Part B: Programming Questions
 
@@ -510,3 +768,210 @@ b. Add the following elements one by one in the order into the hash table:
 c. Delete the following elements one by one in the order from the hash table
 
 d. Show the status of the hash table after each addition and deletion
+
+{: .note-title }
+> **Answer**
+
+**`Hashtable.cs`**:
+
+```csharp
+// File: Hashtable.cs
+// A hashtable ADT implementation using quardratic probing 
+//  to resolve collisions
+// Maolin Tang
+// April 2006
+//Updated in May 2024
+
+using System;
+
+public class Hashtable: IHashtable
+{
+
+	private int count; //the number of key-and-value pairs currently stored in the hashtable
+	private int buckets; //number of buckets
+	private int[] table; //a table storing key-and-value pairs
+	private const int empty = -10000; //an empty bucket
+	private const int deleted = -9999;  //a bucket where a key-and-value pari was deleted
+	
+	// constructor
+	public Hashtable(int buckets)
+	{
+		if(buckets > 0)
+			this.buckets = buckets;
+		count = 0;
+		table = new int[buckets];
+		for (int i = 0; i < buckets; i++)
+			table[i] = empty;
+	}	
+	
+	public int Count
+	{
+		get { return count; }
+	}
+
+	public int Capacity
+	{
+		get { return buckets; }
+		set { buckets = Capacity; }
+	}
+
+	/* pre:  the hashtable is not full
+	 * post: return the bucket for inserting the key
+	 */
+	private int Find_Insertion_Bucket(int key)
+	{
+		int bucket = Hashing(key);
+        int i = 0;
+		int offset = 0;
+		while ((i < buckets) &&
+			(table[(bucket + offset) % buckets]!=empty) &&
+			(table[(bucket + offset) % buckets]!=deleted))
+        //++offset; //linear probing
+        {
+            i++;
+            offset = i * i;
+        }
+		return (offset + bucket) % buckets;
+	}
+
+	/* pre:  true
+	* post: all the elements in the hashtable have been removed
+	*/
+	public void Clear()
+	{
+		count = 0;
+		for (int i = 0; i < buckets; i++)
+			table[i] = empty;
+	}
+
+	/* pre:  true
+	* post: return the bucket where the key is stored
+	*		 if the given key in the hashtable;
+	*		 otherwise, return -1.
+	*/
+	public void Insert(int key)
+	{
+		// check the pre-condition
+		if((Count < table.Length)&&(Search(key)==-1))
+		{
+			int bucket = Find_Insertion_Bucket(key);
+			table[bucket] = key;
+			count++;
+		}
+		else
+			Console.WriteLine("The key has already been in the hashtable or the hashtable is full");
+    }
+
+	/* pre:  true
+	 * post: return the bucket where the key is stored
+	 *		 if the given key in the hashtable;
+	 *		 otherwise, return -1.
+	 */
+	public int Search(int key)
+	{
+		int bucket = Hashing(key);
+
+        int i = 0;
+        int offset = 0;
+        while ((i < buckets) &&
+            (table[(bucket + offset) % buckets] != key) &&
+            (table[(bucket + offset) % buckets] != empty))
+        //offset++;// linear probing
+        {
+
+            i++;
+            offset = i * i; //qudratic probing
+        }
+		if (table[(bucket + offset) % buckets]==key)
+			return (offset + bucket) % buckets;
+		else
+			return -1;
+	}
+
+	/* pre:  nil
+	 * post: the given key has been removed from the hashtable if the given key is in the hashtable
+	*/
+	public void Delete(int key)
+	{
+		int bucket = Search(key);
+		if( bucket != 1)
+		{
+			table[bucket] = deleted;
+			count--;
+		}
+		else
+			Console.WriteLine("The given key is not in the hashtable");
+	}
+
+
+	/* pre:  key>=0
+	 * post: return the bucket (location) for the given key
+	 */
+	private int Hashing(int key)
+	{
+		return (key % buckets);
+	}
+
+
+	/* pre:  nil
+	 * post: print all the elements in the hashtable
+	*/
+
+	public void Print()
+    {
+        for (int i = 0; i < buckets; i++)
+        {
+            if ((table[i] == empty) || (table[i] == deleted))
+                Console.Write(" __ ");
+            else
+                Console.Write(" "+ table[i].ToString() + " ");
+        }
+        Console.WriteLine();
+        Console.WriteLine();
+
+    }
+}
+```
+
+**`TestHashtable.cs`**:
+
+```csharp
+// File: TestHashtable.cs
+// Test the probing implmentation of the Hashtable ADT
+// Maolin Tang
+// April 2006
+//Updated in May 2024
+
+using System;
+using System.IO;
+
+public class TestHashtable
+{
+  public static void Main()
+  {
+        Hashtable h = new Hashtable(17);
+        h.Insert(59);
+        h.Print();
+        h.Insert(39);
+        h.Print();
+        h.Insert(20);
+        h.Print();
+        h.Insert(33);
+        h.Print();
+        h.Insert(58);
+        h.Print();
+        h.Insert(23);
+        h.Print();
+        h.Insert(12);
+        h.Print();
+        h.Insert(29);
+        h.Print();
+        h.Insert(57);
+        h.Print();
+        h.Delete(29);
+        h.Print();
+        h.Delete(39);
+        h.Print();
+    }
+}
+```
