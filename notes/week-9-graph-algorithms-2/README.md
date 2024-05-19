@@ -8,8 +8,6 @@ permalink: /workshop-9
 
 # Workshop 9: Graph Algorithms – II
 
-# Questions
-
 ## Question 1: Adjacency Matrix Revision
 
 To aid in the implementation of Questions 2 & 3 (Dijkstra’s algorithm and
